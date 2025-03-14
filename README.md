@@ -29,6 +29,6 @@ ONScripter是一个开源的NScripter脚本解释工具，主要由Ogapee开发�
 ## Bugs and TODO
 * Sound not good
 * key mapping not good
-* embed to retropie menu
+* embed to retropie menu  
 see https://sirius10.net/RaspberryPi/ONScripter.html  
 /opt/retropie/configs/ports   
