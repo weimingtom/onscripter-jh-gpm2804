@@ -27,8 +27,18 @@ ONScripter是一个开源的NScripter脚本解释工具，主要由Ogapee开发�
 * sudo apt install libsdl2-dev liblua5.1-0-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev libbz2-dev libfontconfig1-dev libogg-dev libvorbis-dev  
 
 ## Bugs and TODO
-* Sound not good
+* (done, see below using retropiemenu) Sound not good
 * key mapping not good
 * embed to retropie menu  
 see https://sirius10.net/RaspberryPi/ONScripter.html  
 /opt/retropie/configs/ports   
+
+# How to launch in Retropie for Waveshare GPM2804 without mc (File Manager) 
+* To solve no audio problem. If use mc (File Manager) to launch, SDL2 will have no audio output   
+* Create file (need reboot to refresh retropie menu) : /home/pi/RetroPie/retropiemenu/onscripter.sh   
+```
+#!/bin/sh
+
+cd /home/pi/pi/work_ons2/onscripter_cn_test
+/home/pi/pi/work_ons2/onscripter-jh-sdl2/onscripter
+```
